@@ -1,114 +1,213 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
-
-
-
-*{ scroll-behavior: smooth;
-
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  scroll-behavior: smooth;
 }
 
+#Inicio {
+  border: solid red 2px;
+  display: flex;
+  font-family: "Inter", Arial, sans-serif;
+}
+#Inicio p {
+  text-align: justify;
+  font-family: "Inter", Arial, sans-serif;
+  justify-content: center;
+  align-items: center;
+}
+#Inicio img {
+  width: 30vh;
+  height: 30vh;
+  justify-content: space-evenly;
+  border-radius: 15%;
+}
 
 body {
-    font-family: "Inter", Arial, sans-serif;
-    background-color: #6d6d6d;
-    color: #000000;
-    
+  font-family: "Inter", Arial, sans-serif;
+  background-color: #6d6d6d;
+  color: #000000;
+  height: 50vh;
+  width: 100%;
 }
+
 header {
-    background-color: #000000;
-    color: #ffe600;
-    text-align : center;
-    padding: 25px;
-    margin: 7px;
-    border: 2px solid rgb(251, 255, 0);  
-    
+  border: solid yellow 2px;
+  background-color: #000000;
+  height: 20vh;
+  width: 100%;
+  margin-top: 5px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 10px;
 }
+header h1 {
+  color: yellow;
+  display: flex;
+  justify-content: center;
+}
+
+.logopetshop {
+  height: 15vh;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
 nav {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 5px;
-    justify-content: center;
-    
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  justify-content: center;
 }
-nav a{
-    padding: 10px;
-    margin: 5px center;
-    background-color: #000000;
-    border-radius: 15px;
-    border: 2px solid rgb(251, 255, 0);
-    text-decoration: none;
-    color: #ffe600;
-    
-    
+
+nav a {
+  padding: 10px;
+  margin: 5px center;
+  background-color: #000000;
+  border-radius: 15px;
+  border: 2px solid rgb(251, 255, 0);
+  text-decoration: none;
+  color: #ffe600;
 }
+
 nav a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
+
 .container {
-    text-justify: justify;
-    max-width: 1000px;
-    margin: 100px auto;
-    padding: 50px;
-    border-radius: 25px;
-    background-color: #ffffff;
-    box-shadow: 0 0 10px rgb(251, 255, 0);
-    
-    
-    
+  height: 600vh;
+  width: 100%;
+  margin-top: 10px;
+  margin-left: 5px;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  background-color: #ffffff;
+  box-shadow: 0 0 10px rgb(251, 255, 0);
+}
+
+p {
+  justify-content: justify;
+  text-align: justify;
+}
+
+h3 {
+  text-align: left;
+}
+
+h1 {
+  font-size: 25px;
+  padding-left: 10px;
+  padding-top: 10px;
+  text-align: left;
+  height: 10vh;
+  width: 40%;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 h2 {
-    color: #000000;
+  color: #000000;
 }
+
 .logo img {
-    display: flex;
-    align-items: center;
-    margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
 }
 
 .tosa img {
-    shape-margin: 3s;
-    width: 100px;
-    height: 100px;
-    margin-right: 10px;
+  shape-margin: 3s;
+  width: 100px;
+  height: 100px;
+  margin-right: 10px;
 }
 
-.carrosel{
-    display: flex;
-    flex-wrap: wrap;
-    animation: scroll 10s linear reverse infinite;
-    justify-content: space-around;
-    transition: animation-play-state paused;
+.carrosel {
+  display: flex;
+  flex-wrap: wrap;
+  animation: scroll 10s linear reverse infinite;
+  justify-content: space-around;
+  transition: animation-play-state paused;
 }
 
-
-@keyframes scroll{
-    0% {
-        transform: translateX(-950px );
-    }
-    100% {
-        transform: translateX(calc(500px * 2));
-    }
+@keyframes scroll {
+  0% {
+    transform: translateX(-150px);
+  }
+  100% {
+    transform: translateX(2000px);
+  }
 }
-
 .back-to-top {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    z-index: 99;
-    background-color: #e5ff00;
-    color: rgb(0, 0, 0);
-    cursor: pointer;
-    padding: 15px;
-    border-radius: 30px;
-    font-size: 20px;
-    text-justify: left;
-    text-decoration: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99;
+  background-color: #e5ff00;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 30px;
+  font-size: 20px;
+  text-justify: left;
+  text-decoration: none;
 }
 
 body:target .back-to-top {
-    display: block;
+  display: block;
 }
 
 .back-to-top:hover {
-    background-color: #ff0000;
+  background-color: #ff0000;
 }
+
+#Tosacao {
+  height: 40vh;
+  width: 25%;
+  border-radius: 10%;
+  align-items: last baseline;
+}
+
+#Brinquedos_para_pets img {
+  height: 30vh;
+  width: 30vh;
+  margin-top: 3px;
+  display: flex;
+  justify-content: center;
+}
+
+#Utensílios_para_pets {
+  justify-content: space-evenly;
+}
+#Utensílios_para_pets ul {
+  display: flex;
+  border: solid red 3px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+#Utensílios_para_pets ul li figure img {
+  height: 40vh;
+  width: 90%;
+  border-radius: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-evenly;
+}
+
+footer {
+  background-color: black;
+  height: 10vh;
+  width: 100%;
+}
+footer p {
+  color: white;
+}/*# sourceMappingURL=style.css.map */
