@@ -137,7 +137,7 @@ h2 {
     display: flex;
     flex-wrap: wrap;
     animation: scroll 10s linear reverse infinite;
-    justify-content: space-around;
+    justify-content: space-evenly;
     transition: animation-play-state paused;
 }
 
@@ -182,12 +182,24 @@ body:target .back-to-top {
 }
 
 #Brinquedos_para_pets{
+    section{
+        display: inline-flex;
+        align-items: center;
+        
+        div{
+            img{
+                display: flex;
+                justify-content:space-between;
+                align-items: inline;
+            }
+            
+        }
+    }
     img{
         height: 30vh;
         width: 30vh;
         margin-top: 3px;
-        display: flex;
-        justify-content:center;
+       
     }
 }
 
@@ -195,21 +207,21 @@ body:target .back-to-top {
     justify-content: space-evenly;
     
     ul{
-        display: flex;
-        border: solid red 3px;
-        display: flex;
+        display: inline-flex;
         align-items: center;
         flex-wrap: wrap;
+        justify-content: space-around;
+        background: rgb(247, 252, 220);
         li{ 
+            
             figure{
+                
                 img{
                     height: 40vh;
                     width: 90%;
                     border-radius: 10%;
                     display:flex;
                     align-items: center;
-                    justify-content: center;
-                    justify-content: space-evenly;
                 }
 
             }
@@ -227,3 +239,14 @@ footer{
     }
 }
 
+.Endereço{
+    
+    iframe{
+        width:60%;
+        height: 500vh;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+}

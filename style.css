@@ -133,7 +133,7 @@ h2 {
   display: flex;
   flex-wrap: wrap;
   animation: scroll 10s linear reverse infinite;
-  justify-content: space-around;
+  justify-content: space-evenly;
   transition: animation-play-state paused;
 }
 
@@ -175,23 +175,30 @@ body:target .back-to-top {
   align-items: last baseline;
 }
 
+#Brinquedos_para_pets section {
+  display: inline-flex;
+  align-items: center;
+}
+#Brinquedos_para_pets section div img {
+  display: flex;
+  justify-content: space-between;
+  align-items: inline;
+}
 #Brinquedos_para_pets img {
   height: 30vh;
   width: 30vh;
   margin-top: 3px;
-  display: flex;
-  justify-content: center;
 }
 
 #Utensílios_para_pets {
   justify-content: space-evenly;
 }
 #Utensílios_para_pets ul {
-  display: flex;
-  border: solid red 3px;
-  display: flex;
+  display: inline-flex;
   align-items: center;
   flex-wrap: wrap;
+  justify-content: space-around;
+  background: rgb(247, 252, 220);
 }
 #Utensílios_para_pets ul li figure img {
   height: 40vh;
@@ -199,8 +206,6 @@ body:target .back-to-top {
   border-radius: 10%;
   display: flex;
   align-items: center;
-  justify-content: center;
-  justify-content: space-evenly;
 }
 
 footer {
@@ -210,4 +215,12 @@ footer {
 }
 footer p {
   color: white;
+}
+
+.Endereço iframe {
+  width: 60%;
+  height: 500vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }/*# sourceMappingURL=style.css.map */
